@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import styles from "./ImageCarousel.module.css";
 
 const images = [
-  "src/assets/images/adsImg2.png",
-  "src/assets/images/adsImg2.png",
-  "src/assets/images/adsImg2.png",
+  "/images/adsImg2.png",
+  "/images/adsImg2.png",
+  "/images/adsImg2.png",
 ];
 
 const ImageCarousel = () => {

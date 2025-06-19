@@ -16,7 +16,7 @@ function ProductSection({ items }) {
           ))}
         </ul>
       </div>}
-      {items.length==0 && <img  src="src\assets\images\sareeAds1.png" alt="sareeimg" width='100%' height='100%' className={styles.sideAdsImg} />    
+      {items.length==0 && <img  src="/images/sareeAds1.png" alt="sareeimg" width='100%' height='100%' className={styles.sideAdsImg} />    
 }
       <div className={styles.productItemsContainer}>
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, index) => (
@@ -35,7 +35,7 @@ const ProductItem = ({ item,index }) => {
             <div style={{background:liked?'white':'#d32f2f'}} onClick={()=>setLiked(!liked)} className={styles.likeContainer}>
                 <FontAwesomeIcon style={{color:liked?'#d32f2f':"white"}}  icon={faHeart}/>
             </div>
-            <img src="src/assets/images/sareeImg1.png" alt="" />
+            <img src="/images/sareeImg1.png" alt="" />
             <div className={styles.btnGroup}>
               <button className={styles.addToCartBtn}>Add to Cart</button>
               <button className={styles.buyNowBtn}>Buy Now</button>

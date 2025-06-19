@@ -73,7 +73,7 @@ const MainNavbar = () => {
     <div className={styles.mainNavbarContainer}>
       {/* logo and company name */}
       <div className={styles.logoContainer}>
-        <img src="src\assets\images\logo.png" alt="Company Logo" />
+        <img src="/images/logo.png" alt="Company Logo" />
         <div className={styles.companyContext}>
           <h3>Sarees</h3>
           <p>A Treasure of Hertitage</p>
