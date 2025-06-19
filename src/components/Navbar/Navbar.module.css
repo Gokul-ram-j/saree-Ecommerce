@@ -1,0 +1,224 @@
+/* cateogry navbar */
+
+*{
+    font-family: 'PoppinsLight'
+}
+.categoryNavContainer{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.categoryItems>ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: clamp(14px, 2vw, 20px);
+    padding: 15px 0px;
+}
+
+.categoryItems>ul>li{
+    list-style: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.1s linear;
+}
+
+.categoryItems>ul>li:hover{
+    border-bottom: 5px solid #F53E32;
+    
+}
+.logoContainer>img{
+    z-index: -1;
+}
+.contactInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .categoryNavContainer {
+        grid-template-columns: 90% 10%;
+    }
+   .contactInfoNumber{
+    display: none;
+   }
+    
+}
+
+
+
+/* mainNavbar */
+
+.mainNavbarContainer{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    width: 100vw;
+    height: fit-content;
+    border-bottom: 1px solid rgba(74, 74, 74, 0.459);
+    gap: 5px;
+}
+
+/* grid 1 */
+.logoContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer>img{
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+
+}
+
+.companyContext{
+    margin-left: 10px;
+}
+
+/* grid 2 */
+.searchBoxContainer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70% 20% 10%;
+}
+
+.searchBox{
+    width: 100%;
+    height: 70%;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    padding-left: 10px;
+    font-size: clamp(14px, 2vw, 20px);
+    font-family: Poppins;
+    border: 2px solid #F53E32;
+    margin: auto;
+}
+
+.categoryBtn, .searchBtn{
+    width:100% ;
+    height: 70%;
+    margin: auto;
+    background: transparent;
+    border: 2px solid #F53E32;
+    
+}
+.categoryItem:hover{
+    background: #F53E32;
+    color: white;
+    cursor: pointer;
+}
+.categoryBtn>button{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+}
+
+.categoryList{
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    height: 300px;
+    overflow: scroll;
+    scrollbar-width: none;
+    font-size: 13px;
+}
+
+.categoryList li{
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.searchBtn{
+    border-radius: 0px 5px 5px 0px;
+   border-left: none;
+}
+
+.categoryBtn{
+   border-left: none;
+   position: relative;
+}
+.searchBtn{
+    font-size: larger;
+}
+
+.searchBoxContainer>input:focus{
+    outline: none;
+}
+.searchBoxContainer>input::placeholder{
+    font-family: 'PoppinsLight';
+    font-size: 15px;
+}
+
+
+
+/* grid 3 */
+
+.accountInfoContainer{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.infoWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* grid 1 */
+    .mainNavbarContainer {
+        grid-template-columns: 20% 80% ;
+        padding: 10px;
+    }
+    .companyContext{
+        display: none;
+    }
+
+    /* grid 2 */
+
+    .categoryList{
+        width: 150px;
+        left:-100px
+    }
+    .searchBoxContainer {
+        grid-template-columns: 70% 15% 15%;
+    }
+    .categoryContext{
+        display: none;
+    }
+
+    /* grid 3 */
+    .accountInfoContainer {
+        width: 99vw;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+}
+
